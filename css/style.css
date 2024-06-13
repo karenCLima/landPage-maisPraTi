@@ -76,3 +76,31 @@ a:link, a:active, a:visited {
     height: 510px;
     margin: 0 auto;
 }
+
+/* MAIN */
+
+/* SECTION INFO */
+
+.info{
+    display: block;
+    font-family: var(--font-michroma);
+}
+
+.info h1{
+    color: var(--roxo-escuro);
+    font-weight: bold;
+}
+
+.info h3{
+    display: inline;
+}
+
+.info img{
+    display: inline;
+    height: 22px;
+    margin-right: 4px;
+}
+
+.info_link a{
+    color:var(--azul);
+}
