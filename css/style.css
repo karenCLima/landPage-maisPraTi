@@ -1,0 +1,78 @@
+/*Estrutura do cabeçalho*/
+:root{
+    --roxo-escuro: #6e42b2;
+    --roxo-claro: #ba3cb9;
+    --azul: #1b48ab;
+    --rosa-claro: #bd94e2;
+    --font-michroma: "Michroma","Arial", sans-serif;
+}
+
+body{
+    
+}
+
+.header{
+    width: 100%;
+}
+
+.header__menu{
+    box-sizing: border-box;
+    height: 55px;
+    background-color:var(--roxo-claro) ;
+    margin: 0 auto;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*Nome do evento */
+
+.header__menu h3{
+    box-sizing: border-box;
+    float: left;
+    margin:0;
+    font-family: var(--font-michroma);
+    color:#fff;
+    padding: 12px ;
+}
+
+/* Barra de navegação */
+.menu_list {
+    box-sizing: border-box;
+    float: right;
+    margin: 0 30px 0 0;
+}
+
+.menu_list li {
+    box-sizing: border-box;
+    height: 55px;
+    display: block;
+    float: left;
+    padding: 17px 25px;
+}
+
+.menu_list li:hover{
+    background-color:var(--rosa-claro);
+}
+
+.menu_list li a{
+    font-family: var(--font-michroma);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.menu_list_subscribe {
+    display: block;
+    background-color: var(--azul);
+}
+
+/* Banner*/
+
+.banner{
+    width: 100%;
+    height: 510px;
+    margin: 0 auto;
+}
