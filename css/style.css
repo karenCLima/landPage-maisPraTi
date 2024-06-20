@@ -79,11 +79,42 @@ a:link, a:active, a:visited {
 
 /* MAIN */
 
+.main__top{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+.section_title{
+    font-family: var(--font-michroma);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.main__left, .main__rigth{
+    float: left;
+    box-sizing: border-box;
+}
+
+.main__left{
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.main__rigth{
+    width: 30%;
+    margin-right: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 /* SECTION INFO */
 
 .info{
     display: block;
     font-family: var(--font-michroma);
+    margin-bottom: 50px;
 }
 
 .info h1{
@@ -103,4 +134,101 @@ a:link, a:active, a:visited {
 
 .info_link a{
     color:var(--azul);
+}
+
+/* MAIN DETALHES */
+#detalhes h3{
+    font-family: var(--font-michroma);
+    font-size: 18px;
+
+}
+
+/* MAIN MAPA */
+#map iframe{
+    height: 350px;
+    width: 700px;
+}
+
+/* MAIN PRECOS */
+
+.precos_tabela{
+    background:var(--rosa-claro);
+    width:96%;
+    height:auto;
+    display:block;
+    margin:3px;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow: 5px 5px 10px;
+}
+
+.precos_tabela .heading{
+    width:100%;
+    padding:10px;
+    text-align:center;
+    font-size:24px;
+    color:#fff;
+    margin-bottom:30px;
+    text-transform:capitalize;
+}
+
+.precos_tabela .block{
+    display:block;
+    width:80%;
+    padding: 4px;
+    margin:13px 10%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px;
+    p{
+        font-weight: bold;
+        font-size: 14pt;
+        padding-left: 12px;
+    }
+    .price{
+      float:right;
+      position:relative;
+      right:20px;
+      color: var(--roxo-escuro);
+    }
+    .options{
+      display:block;
+      list-style:none;
+      margin:10px auto;
+      li{
+        font-size:16px;
+        color: var(--azul);
+        font-weight: bold;
+        text-transform:capitalize;
+      }
+    }
+  }
+  .btn{
+      display:block;
+      margin:20px auto 30px;
+      width:60%;
+      height:50px;
+      background:var(--roxo-escuro);
+      border:none;
+      cursor: pointer;
+      box-shadow: 3px 3px 10px;
+    p{
+      font-weight:bolder;
+      color:#fff;
+      font-size:10pt;
+      text-align:center;
+      font-family: var(--font-michroma);
+      text-transform:uppercase;
+     
+    }
+    span{
+      font-size:20px;
+      position:relative;
+      top:-35px;
+      left:-100%;
+      color:#fff;
+    }
+   }
+   .btn:hover{
+    background: var(--azul);
 }
