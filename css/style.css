@@ -35,7 +35,7 @@ a:link, a:active, a:visited {
     margin:0;
     font-family: var(--font-michroma);
     color:#fff;
-    padding: 12px ;
+    padding: 9px;
 }
 
 /* Barra de navegação */
@@ -231,4 +231,23 @@ a:link, a:active, a:visited {
    }
    .btn:hover{
     background: var(--azul);
+}
+
+/* GALERIA */
+
+.main__bottom{
+    background-color: var(--rosa-claro);
+}
+
+#galeria{
+    margin:5% 2%;
+    width:100%;
+    padding: 2% 0;
+}
+
+#carouselExampleIndicators{
+    width:60%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
 }
