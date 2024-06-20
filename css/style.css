@@ -18,8 +18,11 @@ body{
 .header__menu{
     box-sizing: border-box;
     height: 55px;
+    width: 100%;
     background-color:var(--roxo-claro) ;
     margin: 0 auto;
+    position: fixed;
+    z-index: 1;
 }
 
 a:link, a:active, a:visited {
@@ -143,6 +146,12 @@ a:link, a:active, a:visited {
 
 }
 
+#detalhes p{
+    font-size:17px;
+    font-weight: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* MAIN MAPA */
 #map iframe{
     height: 350px;
@@ -219,6 +228,7 @@ a:link, a:active, a:visited {
       text-align:center;
       font-family: var(--font-michroma);
       text-transform:uppercase;
+      margin: auto 0;
      
     }
     span{
