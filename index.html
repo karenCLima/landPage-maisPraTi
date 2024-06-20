@@ -173,9 +173,29 @@
               </button>
             </div>
           </section>
-          <section id="contatos">
-
-          </section>
+          <section class="formcontato">
+            <div id="contato" class="formcontato__contacto">
+                <div class="formcontato--esquerda">
+                    <img class="formcontato__img" src="./imagens/telefone-contato.svg">
+                </div>
+                <div class="formcontato__text">
+                    <h2 class="section_title">Contato</h2>
+                    <h3 class="formcontato__subtext">Quer entrar em contato?</h3>
+                    <h3 class="formcontato__subtext">Preencha o formulário abaixo e entraremos em contato o mais rápido possível. </h3>
+                    <form class="formcontato__form">
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" maxlength="50" required>
+                        <span class="nome-erro erro"></span><br>
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                        <span class="email-erro erro"></span><br>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" maxlength="50" required>
+                        <span class="assunto-erro erro"></span><br>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" maxlength="300" required></textarea>
+                        <span class="mensagem-erro erro"></span><br>
+                        <button class="formcontato__botao">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
           
 
         </div>
