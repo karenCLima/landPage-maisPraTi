@@ -1,0 +1,100 @@
+:root{
+    --roxo-escuro: #6e42b2;
+    --roxo-claro: #ba3cb9;
+    --azul: #1b48ab;
+    --rosa-claro: #bd94e2;
+    --font-michroma: "Michroma","Arial", sans-serif;
+}
+
+
+.inscricao{
+    margin: 2%;
+}
+
+.inscricao_text{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+}
+
+.form_inscricao__sucesso{
+    color: greenyellow;
+    display:none;
+}
+
+.form_inscricao{
+    padding: 2%;
+}
+
+.form_inscricao label, .form_ingressos label, .ingresso_titulo, #total_valor{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--font-michroma);
+}
+
+.form_inscricao__input{
+    width: 37rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    outline:none;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    box-shadow: 3px 3px 10px;
+}
+
+#cpf, #estado{
+    width: 27rem;
+}
+
+.form_inscricao__input:hover{
+    border-color: var(--roxo-escuro);
+    outline: none;
+}
+
+.form_ingressos{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.form_ingressos input{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#total_valor{
+    margin-bottom: 1%;
+}
+
+.form_inscricao__buttons{
+    width: 100%;
+    float: left;
+}
+
+#inscrever,#cancelar,#resetar{
+    float:left;
+    margin-left: 1%;
+}
+
+.form_incricao__btn{
+    width: 170px;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: var(--roxo-escuro);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px;
+}
+
+#cancelar{
+    background-color:var(--azul);
+    border-color: var(--azul);
+}
+
+#resetar{
+    display: none;
+}
+
+.form_incricao__btn:hover, #cancelar:hover{
+    background-color: var(--rosa-claro);
+    border-color: var(--rosa-claro);
+}
