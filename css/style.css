@@ -19,10 +19,12 @@ body{
     box-sizing: border-box;
     height: 55px;
     width: 100%;
-    background-color:var(--roxo-claro) ;
+    background-color:var(--roxo-claro);
     margin: 0 auto;
     position: fixed;
     z-index: 1;
+    display:flex;
+    justify-content: space-around;
 }
 
 a:link, a:active, a:visited {
@@ -34,7 +36,6 @@ a:link, a:active, a:visited {
 
 .header__menu h3{
     box-sizing: border-box;
-    float: left;
     margin:0;
     font-family: var(--font-michroma);
     color:#fff;
@@ -44,15 +45,14 @@ a:link, a:active, a:visited {
 /* Barra de navegação */
 .menu_list {
     box-sizing: border-box;
-    float: right;
     margin: 0 30px 0 0;
+    display: flex;
 }
 
 .menu_list li {
     box-sizing: border-box;
     height: 55px;
     display: block;
-    float: left;
     padding: 17px 25px;
 }
 
@@ -86,17 +86,13 @@ a:link, a:active, a:visited {
     width: 100%;
     overflow: hidden;
     margin-top: 2%;
+    display: flex;
 }
 
 .section_title{
     font-family: var(--font-michroma);
     font-weight: bold;
     font-size: 24px;
-}
-
-.main__left, .main__rigth{
-    float: left;
-    box-sizing: border-box;
 }
 
 .main__left{
@@ -270,11 +266,15 @@ a:link, a:active, a:visited {
 
 .formcontato{
     background-color: white;
-    margin-left: 10%;
+    background-color: none;
+    width: 100%;
 }
 
-.formcontato--esquerda,.formcontato__text{
-    float: left;
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .formcontato__text{
@@ -358,17 +358,15 @@ a:link, a:active, a:visited {
     top:30px;
  }
 
- .clear{
-    clear: both;
- }
-
  .footer__rodape{
-    width:20%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
  }
  
  .footer__rodape p{
-    padding-top: 2%;
     color: white;
     text-align: center;
  }
