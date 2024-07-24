@@ -66,12 +66,8 @@
 
 .form_inscricao__buttons{
     width: 100%;
-    float: left;
-}
-
-#inscrever,#cancelar,#resetar{
-    float:left;
-    margin-left: 1%;
+    display:flex;
+    gap: 2rem;
 }
 
 .form_incricao__btn{
@@ -92,6 +88,10 @@
 
 #resetar{
     display: none;
+}
+
+#consultar{
+    width:180px;
 }
 
 .form_incricao__btn:hover, #cancelar:hover{

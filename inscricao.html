@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-    <main class="inscricao">
+    <main id="inscricao" class="inscricao">
         <h2 class="section_title">Inscreva-se</h2>
         <p class="inscricao_text">Preencha o formulário abaixo</p>
         <div class="form_container">
@@ -79,6 +79,7 @@
                     <input type="submit" id="inscrever" class="form_incricao__btn"   value="Inscrever">
                     <input type="button" id="cancelar" class="form_incricao__btn" value="Cancelar">
                     <input type="reset" id="resetar" class="form_incricao__btn" value="Nova Inscrição">
+                    <input type="button" id="consultar" class="form_incricao__btn" value="Consultar Inscrição" onclick="requisitar('consulta.html')">
                 </div>
 
 
@@ -95,5 +96,6 @@
     </footer>
     <script src="./JS/validate_form.js"></script>
     <script src="./JS/validate_ingressos.js"></script>
+    <script src="./JS/requisitions_async.js"></script>
 </body>
 </html>
