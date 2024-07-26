@@ -29,6 +29,7 @@
                         <li><a href="./index.html#precos">Preços</a></li>
                         <li><a href="./index.html#galeria">Galeria</a></li>
                         <li><a href="./index.html#contato">Contato</a></li>
+                        <li><a  href="./index.html">Home</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,7 +43,7 @@
         <p class="inscricao_text">Preencha o formulário abaixo</p>
         <div class="form_container">
             <h1 class="form_inscricao__sucesso">Sua inscrição foi realizada com sucesso! <br> As instruções para realizar o pagamento foram enviados para o seu email</h1>
-            <form class="form_inscricao">
+            <form class="form_inscricao" id="formInscricao">
                 <label for="nome">Nome Completo:</label>
                 <input class="form_inscricao__input" type="text" id="nome"  maxlength="50" required>
                 <span class="nome-erro erro"></span>
@@ -60,17 +61,17 @@
                 <span class="estado-erro erro"></span><br>
                 <div class="form_ingressos">
                     <p class="ingresso_titulo">Ingresso:</p><br>
-                    <input type="checkbox" id="ingresso1" name="ingresso" value="600">
+                    <input type="checkbox" id="ingresso1" name="ingresso" value="600" data-label="Passaporte">
                     <label for="ingresso1"> Passaporte - R$600,00</label><br>
-                    <input type="checkbox" id="ingresso2" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso2" name="ingresso" value="250" data-label="Dia 15/11">
                     <label for="ingresso2"> Dia 15/11 - R$250,00</label><br>
-                    <input type="checkbox" id="ingresso3" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso3" name="ingresso" value="250" data-label="Dia 16/11">
                     <label for="ingresso3">Dia 16/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso4" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso4" name="ingresso" value="250" data-label="Dia 17/11">
                     <label for="ingresso4">Dia 17/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso5" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso5" name="ingresso" value="250" data-label="Dia 18/11">
                     <label for="ingresso5">Dia 18/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso6" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso6" name="ingresso" value="250" data-label="Dia 19/11">
                     <label for="ingresso6">Dia 19/11 - R$250,00 </label><br>
                     <span class="checkbox-erro erro">Pelo menos uma opção de ingresso deve ser marcado!</span>
                 </div>
@@ -97,5 +98,6 @@
     <script src="./JS/validate_form.js"></script>
     <script src="./JS/validate_ingressos.js"></script>
     <script src="./JS/requisitions_async.js"></script>
+    <script src="./JS/consulta.js"></script>
 </body>
 </html>
