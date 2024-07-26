@@ -341,3 +341,7 @@ a:link, a:active, a:visited {
     color: white;
     text-align: center;
  }
+
+ @media screen and (max-width:1290px){
+    
+ }

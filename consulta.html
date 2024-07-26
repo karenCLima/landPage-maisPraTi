@@ -16,13 +16,37 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form_inscricao.css">
+    <link rel="stylesheet" href="./css/consulta.css">
 </head>
 <body>
     <main class="consulta">
-        <h2 class="section_title">Inscreva-se</h2>
-        <div id="consulta_result">
-        
+        <h2 class="consulta__title">Consultar Inscrição</h2>
+        <div class="form_container">
+            <form class="form_consulta" id="formConsulta">
+                <label for="consultaCpf">CPF:</label>
+                <input class="form_consulta__input" type="text" id="consultaCpf" placeholder="123.456.789-10" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" minlength="11" required>
+                <input type="button" id="consultar_btn" class="form_consulta__btn" value="Consultar" onclick="consultarInscricao()">
+            </form>
+            <div id="resultado" class="resultado hidden">
+                <table id="resultadoConsulta">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Email</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                            <th>Ingressos</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
+    <script src="./JS/consulta.js"></script>
 </body>
 </html>

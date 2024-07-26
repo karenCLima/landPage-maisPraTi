@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     form.addEventListener('submit', function(event) {
+
+        const nome = document.getElementById('nome').value;
+        const cpf = document.getElementById('cpf').value;
+        const email = document.getElementById('email').value;
+        const cidade = document.getElementById('cidade').value;
+        const estado = document.getElementById('estado').value;
+        const ingressos = Array.from(document.querySelectorAll('input[name="ingresso"]:checked')).map(cb => ({
+            label: cb.getAttribute('data-label'),
+            value: cb.value
+        }));
+
         if (!isAnyCheckboxChecked()) {
             event.preventDefault();
             checkboxErro.style.display = 'block';
@@ -23,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
             sucessoMensagem.style.display = 'block';
             resetarBtn.style.display = "block";
         }
+
+        const inscricao = { nome, cpf, email, cidade, estado, ingressos };
+        localStorage.setItem(cpf, JSON.stringify(inscricao));
     });
 
     cancelarBtn.addEventListener('click', function() {
