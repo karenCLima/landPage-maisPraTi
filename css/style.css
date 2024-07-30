@@ -342,6 +342,94 @@ a:link, a:active, a:visited {
     text-align: center;
  }
 
- @media screen and (max-width:1290px){
-    
+ @media screen and (max-width:1291px){
+
+    .main__top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
+    }
+
+    .main__rigth{
+        margin-top: 20px;
+        width:100%
+    }
+
+    .ingressos_header{
+        justify-content: center;
+        gap:10px;
+    }
+
+    .ul-list{
+        display: flex;
+        flex-direction: row;
+        box-sizing: content-box;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+
+    .ingressos_badge{
+        margin-left: 10px;
+    }
+
+    .formcontato--esquerda{
+        display: none;
+    }
+
+    .formcontato__contacto{
+        flex-direction: column;
+    }
+ }
+
+ @media screen and (max-width:781px){
+
+    .menu_list_item:not(:last-child) {
+        display: none;
+    }
+
+    .formcontato__contacto{
+        align-items: start;
+    }
+
+ }
+
+ @media screen and (max-width:769px){
+    .header__banner{
+        display: none;
+    }
+
+    .header__menu{
+        top:0;
+    }
+
+    .main__top{
+        margin-top:50px;
+    }
+ }
+
+ @media screen and (max-width: 480px){
+    .formcontato__input, .formcontato__textarea{
+        width:100%;
+    }
+
+    .main__rigth{
+        display: none;
+    }
+
+    #map iframe {
+        width:100%;
+    }
+
+    .header__menu h3{
+        font-size:18px;
+        margin: auto 0;
+    }
+
+    .formcontato__contacto{
+        align-items: center;
+    }
+
+    .main__top{
+        align-items: center;
+    }
  }
