@@ -381,17 +381,16 @@ a:link, a:active, a:visited {
     }
  }
 
- @media screen and (max-width:781px){
-
-    .menu_list_item:not(:last-child) {
-        display: none;
-    }
-
+ @media screen and (max-width:910px){
     .formcontato__contacto{
         align-items: start;
     }
 
+    .menu_list_item:not(:last-child) {
+        display: none;
+    }
  }
+
 
  @media screen and (max-width:769px){
     .header__banner{

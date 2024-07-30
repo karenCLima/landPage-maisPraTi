@@ -98,3 +98,69 @@
     background-color: var(--rosa-claro);
     border-color: var(--rosa-claro);
 }
+
+@media screen and (max-width:1700px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+}
+
+@media screen and (max-width:890px){
+
+    .menu_list_item:not(:last-child) {
+        display: none;
+    }
+
+    .form_inscricao__input, #cpf, #estado{
+        width:60%;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+}
+
+@media screen and (max-width:769px){
+    #inscricao{
+        margin-top:100px;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+
+    .form_inscricao__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .form_inscricao__input, #cpf, #estado{
+        width:50%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form_inscricao__input, #cpf, #estado{
+        width:40%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
