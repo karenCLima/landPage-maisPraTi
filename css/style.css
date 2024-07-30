@@ -7,9 +7,6 @@
     --font-michroma: "Michroma","Arial", sans-serif;
 }
 
-body{
-    
-}
 
 .header{
     width: 100%;
@@ -403,6 +400,10 @@ a:link, a:active, a:visited {
 
     .main__top{
         margin-top:50px;
+    }
+
+    .formcontato__input, .formcontato__textarea{
+        width:100%;
     }
  }
 
