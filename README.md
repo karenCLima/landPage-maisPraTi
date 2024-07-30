@@ -1,6 +1,8 @@
 # landPage-maisPraTi
 ## :paperclips: Sobre
 
+**Atividade03 -branch main**
+
 O LandPage  é um projeto desenvolvido como parte do curso Desenvolvedor Full-Stack Jr. oferecido pela parceria entre [+praTI](https://www.maisprati.com.br/) e [Codifica](https://www.codificaedu.com.br/) no módulo de aprendizado em Front-end.<br>
 A proposta é criar é desenvolver uma landing page simples utilizando HTML, CSS e JavaScript.  
 
@@ -15,13 +17,33 @@ Os principais requisitos do projeto era:
 - Ação de botão de chamada para ação (por exemplo, exibir uma mensagem de agradecimento ou redirecionar para outra página, utilizando JS, claro).
 - Escolha uma paleta de cores harmoniosa e fontes apropriadas.
 
-Para esse projeto foi desenvolvido uma landing page de um evento fictício de tecnologia chamado **Java Tec XIV**. Essa página foi inspirada no site de inscrição da  [Rio Innovation Week - 4° Edição](https://www.sympla.com.br/evento/rio-innovation-week-4-edicao/2421228?d=RIW2024&utm_source=google&utm_medium=cpc&utm_campaign=marktech_gads_search_riw2024_nonbrand_tecnologia&utm_content=evento-tecnologia&utm_term=evento-tecnologia&gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRPS5f7bvdxUA4oRgbF7BOJ1U6uKPjVuqQJTB_pnihATEZ5Y4rgu69saAptgEALw_wcB&referrer=www.google.com), inclusive as fotos da galeria foram retiradas de eventos passados dessa conferência. O banner foi feito no [Canva](https://canva.com).
+**Atividade04 - branch atividade_04**  
+
+NOVAS FEATURES (NO MÍNIMO ESSAS):
+- Crie uma branche adicional para o desenvolvimento dos novos recursos do projeto;
+- Reestruture a aplicação para que ela seja estruturada através de Grid e Flexbox;
+- Faça com que as transições sejam assíncronas através de: ajax, fetch e promises;
+- Adicione operações CRUD com o LocalStorage;
+- Responsividade completa.
+
+
+OPCIONAIS DIFERENCIAIS:
+- Uso de libs como Bootstrap, Tailwind, Angular e afins;
+- Tratativa de erros;
+- Dark mode;
+- Animações (Carousel, por exemplo);
+
+**Sobre o Projeto**
+
+Para esse projeto foi desenvolvido uma landing page de um evento fictício de tecnologia chamado **Java Tec XIV**. Essa página foi inspirada no site de inscrição da  [Rio Innovation Week - 4° Edição](https://www.sympla.com.br/evento/rio-innovation-week-4-edicao/2421228?d=RIW2024&utm_source=google&utm_medium=cpc&utm_campaign=marktech_gads_search_riw2024_nonbrand_tecnologia&utm_content=evento-tecnologia&utm_term=evento-tecnologia&gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRPS5f7bvdxUA4oRgbF7BOJ1U6uKPjVuqQJTB_pnihATEZ5Y4rgu69saAptgEALw_wcB&referrer=www.google.com), inclusive as fotos da galeria foram retiradas de eventos passados dessa conferência. O banner foi feito no [Canva](https://canva.com). A página possui responsividade completa, Crud com localstore e uso de Bootstrap.
 
 ## :pushpin: Funcionalidades principais
 
 - Home: Com informações sobre o evento, detalhes sobre a localização, informações sobre preços e condições de pagamento, galeria de fotos e formulário para contato.
 
 - Inscrição: Formulário de inscrição para participar do evento e comprar os ingressos.
+
+- Consulta: Consulta a inscrição pelo cpf podendo editar ou deletar inscrição através do localstore
 
 
 ## :man_technologist: Conhecimentos aplicados
