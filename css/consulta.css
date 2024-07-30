@@ -1,0 +1,70 @@
+:root{
+    --roxo-escuro: #6e42b2;
+    --roxo-claro: #ba3cb9;
+    --azul: #1b48ab;
+    --rosa-claro: #bd94e2;
+    --font-michroma: "Michroma","Arial", sans-serif;
+}
+
+#resultado{
+    margin-top: 20px;
+}
+
+.consulta__title{
+    font-family: var(--font-michroma);
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+.consultaCpf_button{
+    border-radius: 10px;
+    background-color: var(--roxo-escuro);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px;
+}
+
+.edit_delete_button, #consultar_btn{
+    border-radius: 15px;
+    background-color: var(--roxo-escuro);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+#consultaForm{
+    margin-bottom: 20px;
+}
+
+#resultadoConsulta{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resultadoConsulta td, #resultadoConsulta th{
+    border: 1px solid var(--rosa-claro);
+    padding: 8px;
+}
+
+#resultadoConsulta tr:nth-child(even){
+    background-color: var(--roxo-claro);
+}
+
+#resultadoConsulta tr:hover{
+    background-color: var(--rosa-claro);
+}
+
+#resultadoConsulta th{
+    padding-top: 12px;
+    margin-top: 10px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--roxo-claro);
+    color: #fff;
+}
+
+.hidden { display: none; }

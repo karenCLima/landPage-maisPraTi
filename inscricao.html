@@ -25,10 +25,11 @@
                 <h3>Java Tec XIV</h3>
                 <nav class="menu">
                     <ul class="menu_list">
-                        <li><a href="./index.html#detalhes">Detalhes</a></li>
-                        <li><a href="./index.html#precos">Preços</a></li>
-                        <li><a href="./index.html#galeria">Galeria</a></li>
-                        <li><a href="./index.html#contato">Contato</a></li>
+                        <li class="menu_list_item"><a href="./index.html#detalhes">Detalhes</a></li>
+                        <li class="menu_list_item"><a href="./index.html#precos">Preços</a></li>
+                        <li class="menu_list_item"><a href="./index.html#galeria">Galeria</a></li>
+                        <li class="menu_list_item"><a href="./index.html#contato">Contato</a></li>
+                        <li class="menu_list_item"><a  href="./index.html">Home</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,40 +38,50 @@
             </div>
         </div>
     </header>
-    <main class="inscricao">
+    <main id="inscricao" class="inscricao">
         <h2 class="section_title">Inscreva-se</h2>
         <p class="inscricao_text">Preencha o formulário abaixo</p>
         <div class="form_container">
             <h1 class="form_inscricao__sucesso">Sua inscrição foi realizada com sucesso! <br> As instruções para realizar o pagamento foram enviados para o seu email</h1>
-            <form class="form_inscricao">
-                <label for="nome">Nome Completo:</label>
-                <input class="form_inscricao__input" type="text" id="nome"  maxlength="50" required>
-                <span class="nome-erro erro"></span>
-                <label for="cpf">CPF:</label>
-                <input class="form_inscricao__input" type="text" id="cpf" placeholder="123.456.789-10" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" minlength="11" required>
-                <span class="cpf-erro erro"></span><br>
-                <label for="email">Email:</label>
-                <input class="form_inscricao__input" type="email" id="email" placeholder="exemplo@test.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
-                <span class="email-erro erro"></span><br>
-                <label for="cidade">Cidade:</label>
-                <input class="form_inscricao__input" type="text" id="cidade" minlength="3" required>
-                <span class="cidade-erro erro"></span>
-                <label for="estado">Estado:</label>
-                <input class="form_inscricao__input" type="text" id="estado" minlength="3" required>
-                <span class="estado-erro erro"></span><br>
+            <form class="form_inscricao" id="formInscricao">
+                <div class="form_inscricao_container">
+                    <label for="nome">Nome Completo:</label>
+                    <input class="form_inscricao__input" type="text" id="nome"  maxlength="50" required>
+                    <span class="nome-erro erro"></span>
+                </div>
+                <div class="form_inscricao_container">
+                    <label for="cpf">CPF:</label>
+                    <input class="form_inscricao__input" type="text" id="cpf" placeholder="123.456.789-10" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" minlength="11" required>
+                    <span class="cpf-erro erro"></span><br>
+                </div>
+                <div class="form_inscricao_container">
+                    <label for="email">Email:</label>
+                    <input class="form_inscricao__input" type="email" id="email" placeholder="exemplo@test.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                    <span class="email-erro erro"></span><br>
+                </div>
+                <div class="form_inscricao_container">
+                    <label for="cidade">Cidade:</label>
+                    <input class="form_inscricao__input" type="text" id="cidade" minlength="3" required>
+                    <span class="cidade-erro erro"></span>
+                </div>
+                <div class="form_inscricao_container">
+                    <label for="estado">Estado:</label>
+                    <input class="form_inscricao__input" type="text" id="estado" minlength="3" required>
+                    <span class="estado-erro erro"></span><br>
+                </div>
                 <div class="form_ingressos">
                     <p class="ingresso_titulo">Ingresso:</p><br>
-                    <input type="checkbox" id="ingresso1" name="ingresso" value="600">
+                    <input type="checkbox" id="ingresso1" name="ingresso" value="600" data-label="Passaporte">
                     <label for="ingresso1"> Passaporte - R$600,00</label><br>
-                    <input type="checkbox" id="ingresso2" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso2" name="ingresso" value="250" data-label="Dia 15/11">
                     <label for="ingresso2"> Dia 15/11 - R$250,00</label><br>
-                    <input type="checkbox" id="ingresso3" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso3" name="ingresso" value="250" data-label="Dia 16/11">
                     <label for="ingresso3">Dia 16/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso4" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso4" name="ingresso" value="250" data-label="Dia 17/11">
                     <label for="ingresso4">Dia 17/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso5" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso5" name="ingresso" value="250" data-label="Dia 18/11">
                     <label for="ingresso5">Dia 18/11 - R$250,00 </label><br>
-                    <input type="checkbox" id="ingresso6" name="ingresso" value="250">
+                    <input type="checkbox" id="ingresso6" name="ingresso" value="250" data-label="Dia 19/11">
                     <label for="ingresso6">Dia 19/11 - R$250,00 </label><br>
                     <span class="checkbox-erro erro">Pelo menos uma opção de ingresso deve ser marcado!</span>
                 </div>
@@ -79,6 +90,7 @@
                     <input type="submit" id="inscrever" class="form_incricao__btn"   value="Inscrever">
                     <input type="button" id="cancelar" class="form_incricao__btn" value="Cancelar">
                     <input type="reset" id="resetar" class="form_incricao__btn" value="Nova Inscrição">
+                    <input type="button" id="consultar" class="form_incricao__btn" value="Consultar Inscrição" onclick="requisitar('consulta.html')">
                 </div>
 
 
@@ -87,7 +99,7 @@
         </div>
     </main>
     <!-- RODAPE -->
-    <footer class="footer clear">
+    <footer class="footer">
         <div class="footer__rodape">
             <p>Desenvolvido por Karen Lima</p>
             <p>2024</p>
@@ -95,5 +107,7 @@
     </footer>
     <script src="./JS/validate_form.js"></script>
     <script src="./JS/validate_ingressos.js"></script>
+    <script src="./JS/requisitions_async.js"></script>
+    <script src="./JS/consulta.js"></script>
 </body>
 </html>

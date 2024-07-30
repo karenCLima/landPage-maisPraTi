@@ -66,12 +66,8 @@
 
 .form_inscricao__buttons{
     width: 100%;
-    float: left;
-}
-
-#inscrever,#cancelar,#resetar{
-    float:left;
-    margin-left: 1%;
+    display:flex;
+    gap: 2rem;
 }
 
 .form_incricao__btn{
@@ -94,7 +90,77 @@
     display: none;
 }
 
+#consultar{
+    width:180px;
+}
+
 .form_incricao__btn:hover, #cancelar:hover{
     background-color: var(--rosa-claro);
     border-color: var(--rosa-claro);
+}
+
+@media screen and (max-width:1700px){
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+}
+
+@media screen and (max-width:890px){
+
+    .menu_list_item:not(:last-child) {
+        display: none;
+    }
+
+    .form_inscricao__input, #cpf, #estado{
+        width:60%;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+}
+
+@media screen and (max-width:769px){
+    #inscricao{
+        margin-top:100px;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        top:auto;
+    }
+
+    .form_inscricao__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .form_inscricao__input, #cpf, #estado{
+        width:50%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .form_inscricao__input, #cpf, #estado{
+        width:40%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
 }
